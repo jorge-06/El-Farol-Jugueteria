@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 245);
+}
+
+.menuSuperior{
+    display: flex;
+   background-color: rgb(107, 9, 9);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+   
+    
+}
+nav a{
+    padding-right: .5rem;
+   
+  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
+   max-width: 3rem;
+    margin-right: .5rem;
+}
+
+nav a:hover{
+    color: goldenrod;
+    transition: .25s;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.tarjeta{
+    background-color: white;
+    padding: .5rem;
+    margin: 1.5rem;
+    font-size: .75rem;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+.tarjeta img:hover{
+    width: 120%;
+    transition: .25s;
+}
+
+
+.mapa{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+@media ( max-width: 800px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+    }  
+}
+
+@media (max-width: 900px){
+    .tarjetas{
+        display: grid;
+        grid-template-columns: auto auto auto; 
+    }
+}
+@media (max-width: 650px){
+    .tarjetas{
+        display: grid;
+        grid-template-columns: auto auto; 
+    }
+}
+
+
+
+
+
+

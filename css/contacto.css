@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2rem;
+}
+.form h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.form p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 3rem;
+}
+.form .contacto,textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+}
+.form textarea{
+    max-width: 34rem;
+    min-height: 20rem;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(49, 0, 0);;
+    position: fixed;
+    bottom: 0;
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: aliceblue;
+}
+.inicio :hover{
+    color: goldenrod;
+    transition: .25s;
+}
+.inicio a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1200px){
+    .form{
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 2rem;
+        
+    }
+}
+@media (max-width: 680px){
+    .form{
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        
+    }
+}
