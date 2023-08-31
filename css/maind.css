@@ -4,24 +4,15 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-header{
+body{
+    background-color: black;
+}
+.titulo{
     display: flex;
-   background-color: rgb(107, 9, 9);
     justify-content: space-between;
     align-items: center;
     padding: 1rem; 
-    color: aliceblue;  
-}
-a{
-    text-decoration: none;
-    color: aliceblue;
-    
-}
-nav a{
-    padding-right: .5rem;
-   
-  
+    color: aliceblue; 
 }
 
 .logo{
@@ -30,27 +21,28 @@ nav a{
     
 }
 
+.navbar-toggler{
+    background-color: aliceblue;
+}
+
 .logo img{
    max-width: 3rem;
     margin-right: .5rem;
 }
 
-nav a:hover{
-    color: goldenrod;
+.buscador{
+    text-decoration: none;
+    color: rgba(216, 216, 216, 0.788);
     transition: .25s;
 }
 
-@media ( max-width: 800px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-        margin-right: 2rem;
-    }  
+.buscador:hover{
+    color: white;
 }
 
 .footer{
     width: 100%;
-    background-color: rgb(49, 0, 0);;
+    background-color: rgb(69, 25, 173);
     position: absolute;
     bottom: 0;
 }
@@ -60,8 +52,13 @@ nav a:hover{
     justify-content: center;
     padding: 1rem;
 }
+.textoFooter{
+    text-decoration: none;
+    color: rgba(216, 216, 216, 0.788);
+    transition: .25s; 
+}
 .nosotros :hover{
-    color: goldenrod;
+    color: white;
     transition: .25s;
 }
 

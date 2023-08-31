@@ -8,25 +8,12 @@ body{
     background-color: rgb(255, 255, 245);
 }
 
-.menuSuperior{
+.titulo{
     display: flex;
-   background-color: rgb(107, 9, 9);
     justify-content: space-between;
     align-items: center;
     padding: 1rem; 
-    color: aliceblue;
-}
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-   
-    
-}
-nav a{
-    padding-right: .5rem;
-   
-  
+    color: aliceblue; 
 }
 
 .logo{
@@ -35,14 +22,23 @@ nav a{
     
 }
 
+.navbar-toggler{
+    background-color: aliceblue;
+}
+
 .logo img{
    max-width: 3rem;
     margin-right: .5rem;
 }
 
-nav a:hover{
-    color: goldenrod;
+.buscador{
+    text-decoration: none;
+    color: rgba(216, 216, 216, 0.788);
     transition: .25s;
+}
+
+.buscador:hover{
+    color: white
 }
 
 .tarjetas{
@@ -51,32 +47,27 @@ nav a:hover{
 }
 
 .tarjeta{
-    background-color: white;
+    background-color: rgba(119, 51, 245, 0.836);
+    color: aliceblue;
+    border-radius: 3%;
     padding: .5rem;
     margin: 1.5rem;
     font-size: .75rem;
+    transition: .25s;
 }
 
 .tarjeta img{
     width: 100%;
+    
 }
-.tarjeta img:hover{
-    width: 120%;
-    transition: .25s;
+.tarjeta:hover{
+    transform: scale(112%);
 }
 
 
 .mapa{
     margin-top: .5rem;
     margin-bottom: 2rem;
-}
-
-@media ( max-width: 800px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-        margin-right: 2rem;
-    }  
 }
 
 @media (max-width: 900px){
@@ -89,6 +80,12 @@ nav a:hover{
     .tarjetas{
         display: grid;
         grid-template-columns: auto auto; 
+    }
+}
+@media (max-width: 420px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column; 
     }
 }
 
