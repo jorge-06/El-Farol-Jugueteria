@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
-    background-color: black;
-}
+
 .titulo{
     display: flex;
     justify-content: space-between;
@@ -40,6 +38,17 @@ body{
     color: white;
 }
 
+.fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(90%);
+}
+.textoFondo{
+    display: grid;
+    place-items: center;
+}
+
 .footer{
     width: 100%;
     background-color: rgb(69, 25, 173);
@@ -62,17 +71,14 @@ body{
     transition: .25s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 800px) {
+    .fondo{
+        transform: scale(65%);
+    }
+}
+@media(max-width: 450px) {
+    .fondo{
+        transform: scale(50%);
+    }
+}
 
